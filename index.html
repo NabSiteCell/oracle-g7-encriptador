@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title class="titulo">Encriptador!</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1 class="h1" id="titulo-mensaje">Encriptador!</h1>
+    <div class="contenedor-principal">
+        <div class="contenedor">
+            <form class="finput" action="/submit-comment" method="post">
+                <label class="fuente" for="comment">Deja tu mensaje.</label>
+                <textarea class="foutput" id="texto" cols="30" rows="10" name="comment" placeholder="Escribe tu comentario aquí..."></textarea>
+                <div class="contenedor-botones">
+                    <button class="boton-encriptar" type="button" onclick="encriptar()">Encriptar</button>
+                    <button class="boton-desencriptar" type="button" onclick="desencriptar()">Desencriptar</button>
+                </div>
+                <label class="fuente" for="comment">Solo letras minúsculas y sin acentos</label>
+            </form>
+        </div>
+        <div class="contenedor_dos">
+            <form class="foutput" action="/submit-comment" method="post">
+                <label class="fuente" for="comment">Mensaje Para encriptar o desencriptar</label>
+                <textarea class="finput" id="mensaje-desencriptado" name="comment" readonly placeholder="Mensaje no encontrado"></textarea>
+                <div class="contenedor-copiar">
+                    <button class="boton-copiar" type="button" onclick="copiarTexto()">Copiar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="footer-contenido">
+            <p>© 2024 Mi Sitio Web. Todos los derechos reservados.</p>
+            <ul class="footer-enlaces">
+                <li><a href="#">Política de Privacidad</a></li>
+                <li><a href="#">Términos de Servicio</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </div>
+    </footer>
+    <script src="index.js"></script>
+</body>
+</html>

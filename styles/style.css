@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
+
+:root {
+    --color-primario: #000000;
+    --color-secundario: #F6F6F6;
+    --color-terciario: #22D4FD;
+    --color-hover: #272727;
+    --background-pos-x: center;
+    --background-pos-y: center;
+    --fuente-pixel: 'Pixelify Sans', sans-serif;
+}
+
+/* Estilo general del cuerpo */
+body {
+    background-image: url('../assets/background.jpg');
+    background-position: var(--background-pos-x) var(--background-pos-y);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+}
+
+/* Estilo del encabezado */
+h1 {
+    font-family: var(--fuente-pixel);
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* Estilo para los formularios y etiquetas */
+.fuente {
+    font-family: var(--fuente-pixel);
+    text-align: center;    
+}
+
+.contenedor, .contenedor_dos {
+    width: 100%;
+    max-width: 350px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 0 auto 20px; /* Asegura que el margen inferior sea consistente y centra el contenido horizontalmente */
+    box-sizing: border-box; /* Incluye padding y borde en el ancho total */
+}
+
+.contenedor form, .contenedor_dos form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contenedor label, .contenedor_dos label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.contenedor textarea, .contenedor_dos textarea {
+    width: 100%;
+    height: 200px;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    resize: none;
+    font-family: var(--fuente-pixel);
+    font-size: 14px;
+    margin-bottom: 10px;
+    box-sizing: border-box; /* Incluye padding y borde en el ancho total */
+}
+
+.contenedor-botones, .contenedor-botones_dos {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.boton-encriptar, .boton-desencriptar {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: var(--fuente-pixel);
+    box-sizing: border-box; /* Incluye padding en el ancho total */
+    text-align: center;
+
+
+    margin-left: 10px;
+   
+}
+
+.boton-encriptar:hover, .boton-desencriptar:hover, .boton-copiar:hover {
+    background-color: #0b0d88;
+}
+
+/* Estilo para el footer */
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    width: 100%;
+    margin-top: auto;
+    font-family: var(--fuente-pixel);
+}
+
+/* Contenido del footer */
+.footer-contenido {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-enlaces {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+}
+
+.footer-enlaces li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.footer-enlaces a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-enlaces a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos responsivos */
+@media (max-width: 375px) {
+    .contenedor-principal {
+        flex-direction: column;
+        align-items: center; /* Centra los contenedores horizontalmente */
+        padding: 0 10px; /* Añade padding a los lados para evitar que el contenido toque los bordes */
+    }
+
+    .contenedor, .contenedor_dos {
+        width: 100%;
+        max-width: none; /* Elimina el ancho máximo para pantallas pequeñas */
+        margin: 10px 0; /* Ajusta el margen superior e inferior */
+        box-sizing: border-box; /* Incluye padding y borde en el ancho total */
+    }
+
+    .contenedor textarea, .contenedor_dos textarea {
+        height: 150px; /* Ajusta la altura para pantallas pequeñas */
+    }
+
+    .footer {
+        padding: 15px 0; /* Reduce el padding para pantallas pequeñas */
+    }
+}
+.boton-copiar{
+
+    margin-left: 35%;
+    
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: var(--fuente-pixel);
+    box-sizing: border-box; /* Incluye padding en el ancho total */
+    text-align: center;
+}
